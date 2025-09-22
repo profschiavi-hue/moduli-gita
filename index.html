@@ -6,149 +6,151 @@
     <title>Gestione Uscite Didattiche</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Incolla qui il codice CSS fornito nella sezione successiva */
+        /*
+         * CSS INCLUSO
+         */
         body {
-    font-family: 'Poppins', sans-serif;
-    background: #f0f2f5;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    line-height: 1.6;
-}
+            font-family: 'Poppins', sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            line-height: 1.6;
+        }
 
-.container {
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-    padding: 2rem;
-}
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            padding: 2rem;
+        }
 
-header {
-    margin-bottom: 2rem;
-}
+        header {
+            margin-bottom: 2rem;
+        }
 
-.main-title {
-    color: #1a4d2e;
-    font-weight: 600;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
+        .main-title {
+            color: #1a4d2e;
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
 
-.card {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+        .card:hover {
+            transform: translateY(-5px);
+        }
 
-h2 {
-    color: #1a4d2e;
-    margin-top: 0;
-    font-weight: 400;
-}
+        h2 {
+            color: #1a4d2e;
+            margin-top: 0;
+            font-weight: 400;
+        }
 
-#login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+        #login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
 
-input[type="text"],
-input[type="password"] {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
+        input[type="text"],
+        input[type="password"] {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-    border-color: #4da677;
-    outline: none;
-}
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #4da677;
+            outline: none;
+        }
 
-button {
-    padding: 0.8rem;
-    border: none;
-    border-radius: 8px;
-    background-color: #4da677;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        button {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #4da677;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-button:hover {
-    background-color: #3e8c61;
-}
+        button:hover {
+            background-color: #3e8c61;
+        }
 
-.error-message {
-    color: #e74c3c;
-    margin-top: 1rem;
-    font-weight: 600;
-}
+        .error-message {
+            color: #e74c3c;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
 
-.hidden {
-    display: none;
-}
+        .hidden {
+            display: none;
+        }
 
-.module-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
+        .module-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
 
-.module-list li {
-    background: #eef5f3;
-    border-radius: 10px;
-    padding: 1rem;
-    transition: background-color 0.3s;
-}
+        .module-list li {
+            background: #eef5f3;
+            border-radius: 10px;
+            padding: 1rem;
+            transition: background-color 0.3s;
+        }
 
-.module-list li:hover {
-    background: #e1ede8;
-}
+        .module-list li:hover {
+            background: #e1ede8;
+        }
 
-.module-list a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
+        .module-list a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
 
-.module-list img {
-    width: 48px;
-    height: 48px;
-}
+        .module-list img {
+            width: 48px;
+            height: 48px;
+        }
 
-#logout-button {
-    background-color: #e74c3c;
-    margin-top: 2rem;
-}
+        #logout-button {
+            background-color: #e74c3c;
+            margin-top: 2rem;
+        }
 
-#logout-button:hover {
-    background-color: #c0392b;
-}
+        #logout-button:hover {
+            background-color: #c0392b;
+        }
 
-@media (max-width: 480px) {
-    .main-title {
-        font-size: 2rem;
-    }
-}
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -200,43 +202,46 @@ button:hover {
     </div>
     
     <script>
-        // Incolla qui il codice JavaScript fornito nella sezione successivadocument.addEventListener('DOMContentLoaded', function() {
-    const loginForm = document.getElementById('login-form');
-    const loginSection = document.getElementById('login-section');
-    const modulesSection = document.getElementById('modules-section');
-    const welcomeMessage = document.getElementById('welcome-message');
-    const errorMessage = document.getElementById('error-message');
-    const logoutButton = document.getElementById('logout-button');
+        /*
+         * JAVASCRIPT INCLUSO
+         */
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('login-form');
+            const loginSection = document.getElementById('login-section');
+            const modulesSection = document.getElementById('modules-section');
+            const welcomeMessage = document.getElementById('welcome-message');
+            const errorMessage = document.getElementById('error-message');
+            const logoutButton = document.getElementById('logout-button');
 
-    // Credenziali hardcoded (per un'applicazione reale, dovresti usare un backend)
-    const validUsername = 'docente';
-    const validPassword = 'password123';
+            // Credenziali hardcoded (per un'applicazione reale, dovresti usare un backend)
+            const validUsername = 'docente';
+            const validPassword = 'password123';
 
-    loginForm.addEventListener('submit', function(event) {
-        event.preventDefault();
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
 
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
 
-        if (username === validUsername && password === validPassword) {
-            // Login riuscito
-            loginSection.classList.add('hidden');
-            modulesSection.classList.remove('hidden');
-            welcomeMessage.textContent = `Benvenuto, ${username}!`;
-            errorMessage.textContent = '';
-        } else {
-            // Login fallito
-            errorMessage.textContent = 'Nome utente o password non validi. Riprova.';
-        }
-    });
+                if (username === validUsername && password === validPassword) {
+                    // Login riuscito
+                    loginSection.classList.add('hidden');
+                    modulesSection.classList.remove('hidden');
+                    welcomeMessage.textContent = `Benvenuto, ${username}!`;
+                    errorMessage.textContent = '';
+                } else {
+                    // Login fallito
+                    errorMessage.textContent = 'Nome utente o password non validi. Riprova.';
+                }
+            });
 
-    logoutButton.addEventListener('click', function() {
-        // Logout
-        modulesSection.classList.add('hidden');
-        loginSection.classList.remove('hidden');
-        loginForm.reset(); // Resetta i campi del form
-    });
-});
+            logoutButton.addEventListener('click', function() {
+                // Logout
+                modulesSection.classList.add('hidden');
+                loginSection.classList.remove('hidden');
+                loginForm.reset(); // Resetta i campi del form
+            });
+        });
     </script>
 </body>
 </html>
